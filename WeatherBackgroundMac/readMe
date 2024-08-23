@@ -1,0 +1,50 @@
+Sure, here’s the setup instructions for the files in plain text:
+
+---
+
+```
+# Weather-Based Wallpaper Changer Setup Guide
+
+This guide will help you set up a dynamic desktop wallpaper changer on your Mac, which adjusts the wallpaper based on the current weather and time of day.
+
+## Step 1: Prerequisites
+
+Before starting, ensure you have the following:
+
+- An OpenWeather API key (sign up at https://openweathermap.org/api)
+- The `jq` tool installed on your Mac (you can install it using Homebrew with the command `brew install jq`)
+- A collection of wallpapers organized into folders for different weather conditions and times of day
+
+## Step 2: Setting Up the AppleScript
+
+The main script that changes the wallpaper based on the weather and time is the following AppleScript. You'll need to customize it with your own API key, latitude, longitude, file paths, and other specific details.
+
+## Step 3: Setting Up the Shell Script
+
+You need a shell script to run the AppleScript at regular intervals (every 10 minutes in this case).
+
+### Shell Script: `runwallpapers.sh`
+
+Replace `"path/to/weatherBackground"` with the actual path to the AppleScript application you saved earlier.
+
+## Step 4: Setting Up the Command Script
+
+You need a simple command script that tells your Mac to run the shell script.
+
+### Command Script:
+
+Replace `"path/to/runwallpapers.sh"` with the actual path to the shell script you created.
+
+## Step 5: Automate the Wallpaper Changer
+
+To ensure this runs automatically every time you log in, follow these steps:
+
+1. Open **System Preferences** > **Users & Groups**.
+2. Select your user and click on the **Login Items** tab.
+3. Click the **+** button and add the AppleScript application you created (`weatherBackground.app`).
+
+Make sure the AppleScript and shell script are running and correctly linked. Your wallpapers should now change automatically based on the weather and time of day.
+
+--- 
+
+Copy this text and send it to whoever needs the setup instructions.
